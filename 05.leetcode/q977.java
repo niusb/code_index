@@ -15,19 +15,39 @@ public class q977 {
         System.out.println(Arrays.toString(n));
     }
     public int[] sortedSquares(int[] nums) {
-        int right = nums.length - 1;
         int left = 0;
+        int right = nums.length - 1;
         int[] result = new int[nums.length];
-        int index = result.length - 1;
+        int idnex = nums.length - 1;
+//        只能先放右边，因为始末两个树的平方，必定有一个是最大的
         while (left <= right) {
-            if (nums[left] * nums[left] > nums[right] * nums[right]) {
-                result[index--] = nums[left] * nums[left];
-                ++left;
-            } else {
-                result[index--] = nums[right] * nums[right];
-                --right;
+            if (nums[left] * nums[left] < nums[right] * nums[right]) {
+                result[idnex] = nums[right] * nums[right];
+                idnex--;
+                right--;
+            }else{
+                result[idnex] = nums[left] * nums[left];
+                idnex--;
+                left++;
             }
         }
         return result;
     }
+
+//    public int[] sortedSquares(int[] nums) {
+//        int right = nums.length - 1;
+//        int left = 0;
+//        int[] result = new int[nums.length];
+//        int index = result.length - 1;
+//        while (left <= right) {
+//            if (nums[left] * nums[left] > nums[right] * nums[right]) {
+//                result[index--] = nums[left] * nums[left];
+//                ++left;
+//            } else {
+//                result[index--] = nums[right] * nums[right];
+//                --right;
+//            }
+//        }
+//        return result;
+//    }
 }

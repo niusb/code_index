@@ -3,8 +3,8 @@ package 周赛.第295次周赛;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class two
-{
+public class two {
+    // 2288. 价格减免
     public static void main(String[] args) {
         two t = new two();
         String n = t.discountPrices("there are $1 $2 and 5$ candies in the shop", 50);

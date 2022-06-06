@@ -2,6 +2,7 @@ package 周赛.第295次周赛;
 
 //第295场周赛-第1题
 public class one {
+    // 2287. 重排字符形成目标字符串
     public static void main(String[] args) {
         one t = new one();
         int n = t.rearrangeCharacters("abcbc", "bc");

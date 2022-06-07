@@ -1,5 +1,5 @@
 public class m0207 {
-    // 链表相交
+    // m0207.链表相交
     public static void main(String[] args) {
         m0207 q = new m0207();
         ListNode node1 = new ListNode(0);

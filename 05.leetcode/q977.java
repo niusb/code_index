@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class q977 {
+    // 977. 有序数组的平方
     public static void main(String[] args) {
         q977 q = new q977();
         int[] nums = {-4,-1,0,3,10};

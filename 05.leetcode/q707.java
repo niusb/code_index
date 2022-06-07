@@ -1,8 +1,7 @@
 import java.util.List;
 
 public class q707 {
-
-
+    // 707. 设计链表
     public static void main(String[] args) {
 
         ListNode node1 = new ListNode(0);

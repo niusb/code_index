@@ -1,4 +1,5 @@
 public class q704 {
+    // 704. 二分查找
     public static void main(String[] args) {
         q704 q = new q704();
         int[] nums = {-1,0,3,5,9,12};

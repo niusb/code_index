@@ -1,5 +1,5 @@
 public class q24 {
-
+    // 24. 两两交换链表中的节点
     public static void main(String[] args) {
         q24 q = new q24();
         ListNode node1 = new ListNode(0);

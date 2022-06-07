@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class q478 {
-    // 在圆内随机生成点
+    // 478.在圆内随机生成点
     public static void main(String[] args) {
         Solution s = new Solution(3.0,0.0,0);
         double[] d = s.randPoint();

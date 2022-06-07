@@ -1,5 +1,5 @@
 public class q142 {
-    // 环形链表Ⅱ
+    // 142.环形链表Ⅱ
     public static void main(String[] args) {
         q142 q = new q142();
         ListNode node1 = new ListNode(0);

@@ -1,5 +1,5 @@
 public class q242 {
-    // 有效的字母异位词
+    // 242.有效的字母异位词
     public static void main(String[] args) {
         q242 q = new q242();
         System.out.println(q.isAnagram("car","ra"));

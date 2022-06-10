@@ -12,7 +12,7 @@ public class q977 {
 //            System.out.println(a);
 //        }
 
-//        Arrays。toString =>数组转字符串
+//        Arrays.toString =>数组转字符串
         System.out.println(Arrays.toString(n));
     }
     public int[] sortedSquares(int[] nums) {

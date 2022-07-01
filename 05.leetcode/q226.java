@@ -1,9 +1,9 @@
 public class q226 {
     //226.翻转二叉树
     public static void main(String[] args) {
-        TreeNode left1 = new TreeNode(2);
-        TreeNode right1 = new TreeNode(7);
-        TreeNode root = new TreeNode(4,left1,right1);
+        TreeNode left = new TreeNode(2);
+        TreeNode right = new TreeNode(7);
+        TreeNode root = new TreeNode(4,left,right);
         q226 q226 = new q226();
         q226.invertTree(root);
         PrintBTree printBTree = new PrintBTree();

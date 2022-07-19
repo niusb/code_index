@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="101" platform="Windows" product_id="0" product_minver="310">
+  <Options>
+    <Resolve>
+      <AutoModeDetection enabled="false" />
+      <ViaProxy enabled="true">
+        <TryLocalDnsFirst enabled="false" />
+      </ViaProxy>
+      <ExclusionList>%ComputerName%; localhost; *.local</ExclusionList>
+      <DnsUdpMode>0</DnsUdpMode>
+    </Resolve>
+    <Encryption mode="basic" />
+    <HttpProxiesSupport enabled="false" />
+    <HandleDirectConnections enabled="false" />
+    <ConnectionLoopDetection enabled="true" />
+    <ProcessServices enabled="false" />
+    <ProcessOtherUsers enabled="false" />
+  </Options>
+  <ProxyList>
+    <Proxy id="101" type="SOCKS5">
+      <Address>132.232.49.151</Address>
+      <Port>7766</Port>
+      <Options>48</Options>
+      <Authentication enabled="true">
+        <Username>wangys</Username>
+        <Password>AAACb2rfjpV+8aL5uPKuMQCIPEzQo3euHuAx6Lx6r5iKy9Y=</Password>
+      </Authentication>
+    </Proxy>
+    <Proxy id="102" type="SOCKS5">
+      <Address>10.208.234.69</Address>
+      <Port>1080</Port>
+      <Options>48</Options>
+    </Proxy>
+    <Proxy id="103" type="SOCKS5">
+      <Address>183.203.208.176</Address>
+      <Port>59080</Port>
+      <Options>48</Options>
+    </Proxy>
+    <Proxy id="104" type="SOCKS5">
+      <Address>10.208.201.32</Address>
+      <Port>1080</Port>
+      <Options>48</Options>
+      <Authentication enabled="true">
+        <Username>yunhj</Username>
+        <Password>AAACzu2pWxjltl7QNY2f3+Ue2/wA6dHyKjtukCmmdVE4IC8=</Password>
+      </Authentication>
+    </Proxy>
+    <Proxy id="105" type="SOCKS5">
+      <Address>10.208.201.6</Address>
+      <Port>1080</Port>
+      <Options>48</Options>
+    </Proxy>
+    <Proxy id="106" type="SOCKS5">
+      <Address>10.208.201.135</Address>
+      <Port>1080</Port>
+      <Options>48</Options>
+    </Proxy>
+    <Proxy id="107" type="SOCKS5">
+      <Address>138.54.252.69</Address>
+      <Port>1880</Port>
+      <Options>48</Options>
+    </Proxy>
+    <Proxy id="108" type="SOCKS5">
+      <Address>127.0.0.1</Address>
+      <Port>8010</Port>
+      <Options>48</Options>
+    </Proxy>
+  </ProxyList>
+  <ChainList />
+  <RuleList>
+    <Rule enabled="true">
+      <Name>联通国际</Name>
+      <Targets>137.0.18.*;137.0.16.*;137.0.0.*;192.168.50.*;;137.0.4.*;137.0.5.*;192.168.55.*;10.120.*</Targets>
+      <Action type="Proxy">107</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>江西移动</Name>
+      <Targets>10.114.93.*</Targets>
+      <Action type="Proxy">101</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>sxyd-work0</Name>
+      <Targets>10.*</Targets>
+      <Action type="Proxy">102</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>sxyd-home</Name>
+      <Targets>10.*;;172.*.*.*;10.*.*.*;*.si-tech.com.cn;*.on-con.*;*.teamshub.com;*.si-tech.cn</Targets>
+      <Action type="Proxy">103</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>sxyd-work1</Name>
+      <Targets>10.*;*.qq.com</Targets>
+      <Action type="Proxy">104</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>localhost</Name>
+      <Targets>localhost; 127.0.0.1; %ComputerName%</Targets>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="false">
+      <Name>sxud-work2</Name>
+      <Targets>10.*</Targets>
+      <Action type="Proxy">105</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>sxyd-work3</Name>
+      <Targets>10.*</Targets>
+      <Action type="Proxy">106</Action>
+    </Rule>
+    <Rule enabled="true">
+      <Name>山西广电BOSS</Name>
+      <Targets>10.0.1.*;10.0.2.*;10.0.3.*;172.31.1.*;192.168.162.*;</Targets>
+      <Action type="Proxy">108</Action>
+    </Rule>
+    <Rule enabled="true">
+      <Name>Default</Name>
+      <Action type="Direct" />
+    </Rule>
+  </RuleList>
+</ProxifierProfile>

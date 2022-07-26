@@ -1,0 +1,1 @@
+![d4e0f999f5be1537ad88e2ab55c9940](D:\code\github\code_index\06.interview\Hollis.assets\d4e0f999f5be1537ad88e2ab55c9940.jpg)![6a80a3879652c4eb95f60a7f40e5593](D:\code\github\code_index\06.interview\Hollis.assets\6a80a3879652c4eb95f60a7f40e5593.jpg)

@@ -1,5 +1,6 @@
 package zuoshen;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class q1 {
@@ -10,9 +11,9 @@ public class q1 {
         int[] arr = {1,2};
 //        int[] result = Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
+        q1 q1 = new q1();
     }
 
-    public void solution(Arrays arrays, int L){
-
+    public void solution(Array array, int L){
     }
 }

@@ -1,0 +1,31 @@
+# .bash_profile
+
+# Get the aliases and functions
+####zhouwena
+export DISPLAY=localhost:0
+
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+export JAVA_HOME=/app/commonapp/jdk1.8.0_251
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME/bin
+#PATH=$PATH:$HOME/.local/bin:$HOME/bin
+###zhouwena
+export JMETER_HOME=/app/apache-jmeter-5.4.1
+export CLASSPATH=$JMETER_HOME/lib/ext/ApacheJMeter_core.jar:$JMETER_HOME/lib/jorphan.jar:$CLASSPATH
+export PATH=$JMETER_HOME/bin:$PATH
+
+
+###zhouwena
+export JAVA_OPTS=-Djava.awt.headless=true
+
+## sx
+export LANG=zh_CN.gb2312
+
+
+export PATH
+~

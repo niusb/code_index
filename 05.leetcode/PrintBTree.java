@@ -7,6 +7,7 @@ public class PrintBTree {
 
     //leetcode官方
     //计算高度
+//    输出树形结构
     public List<List<String>> printTree(TreeNode root) {
         int height = getHeight(root);
         String[][] res = new String[height][(1 << height) - 1];

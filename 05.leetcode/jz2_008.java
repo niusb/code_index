@@ -1,4 +1,5 @@
 public class jz2_008 {
+//    剑指 Offer II 008. 和大于等于 target 的最短子数组
     public static void main(String[] args) {
         jz2_008 jz2_008 = new jz2_008();
         int s = 7;

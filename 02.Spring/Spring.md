@@ -29,7 +29,9 @@
 
 抽象类：自下向上
 
+#### BeanFactory和FactoryBean的区别
 
+![image-20220824102614688](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824102614688.png)
 
 #### 循环依赖（三级缓存）
 

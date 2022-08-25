@@ -1,3 +1,51 @@
+#### 垃圾
+
+没有引用的对象就是垃圾
+
+满足**根可达性**的不是垃圾
+
+#### 垃圾清除的算法
+
+- 标记清除（mark-sweep)
+
+![image-20220824094322109](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824094322109.png)
+
+- 拷贝(copying)
+
+![image-20220824094237165](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824094237165.png)
+
+- 标记压缩（mark-compact）
+
+  ![image-20220824094107714](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824094107714.png)
+
+#### 垃圾回收器
+
+##### 堆内存逻辑分区
+
+可以手动调整
+
+![image-20220824135041642](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824135041642.png)
+
+##### 垃圾回收期类型
+
+![image-20220824150955190](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824150955190.png)
+
+##### 三色标记算法
+
+- 黑色：已经扫描结束
+- 灰色：没有扫描结束
+- 白色：未扫描
+
+##### 【CMS垃圾回收器】Incremental Update的非常隐蔽的问题
+
+review
+
+![image-20220824162558554](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824162558554.png)
+
+##### 【G1垃圾回收期】SFATB Snapshot At the Beginning
+
+![image-20220825135751233](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220825135751233.png)
+
 #### [JVM怎么给对象分配内存](https://blog.csdn.net/qq_37735779/article/details/124620252)
 
 为对象分配空间的任务等同于把一块确定大小的内存从Java堆中划分出来。与[垃圾回收](https://so.csdn.net/so/search?q=垃圾回收&spm=1001.2101.3001.7020)机制有关：
@@ -29,3 +77,5 @@
 该类对应的java.lang.class对象没有任何地方被引用，无法在任务地方通过反射的方式访问该类的方法。
 
 #### GC频繁如何调优
+
+//todo

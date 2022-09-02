@@ -10,13 +10,14 @@ public class jz18 {
         listNode.print(jz18.deleteNode(node1,2));
     }
     public ListNode deleteNode(ListNode head, int val) {
-        if(head.val == val) return head.next;
+        if (head.val == val) return head.next;
         ListNode pre = head, cur = head.next;
-        while(cur != null && cur.val != val) {
+        while (cur != null && cur.val != val){
             pre = cur;
             cur = cur.next;
         }
-        if(cur != null) pre.next = cur.next;
+        //cur = val 时，只要cur不为空，对当前cur进行剔除
+        if (cur != null) pre.next = cur.next;
         return head;
     }
 }

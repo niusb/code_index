@@ -1,4 +1,5 @@
 public class jz2_010 {
+//    青蛙跳台阶问题
     public static void main(String[] args) {
         jz2_010 jz2_010 = new jz2_010();
         System.out.println(jz2_010.numWays(10));

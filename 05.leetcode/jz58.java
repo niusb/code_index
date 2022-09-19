@@ -9,13 +9,13 @@ public class jz58 {
     //1、反转前N个字符
     //2、反转n后的字符
     //3、整体反转
-    public String reverseLeftWords(String s, int n) {
-        int len=s.length();
-        StringBuilder sb=new StringBuilder(s);
-        reverseString(sb,0,n-1);
-        reverseString(sb,n,len-1);
-        return sb.reverse().toString();
-    }
+//    public String reverseLeftWords(String s, int n) {
+//        int len=s.length();
+//        StringBuilder sb=new StringBuilder(s);
+//        reverseString(sb,0,n-1);
+//        reverseString(sb,n,len-1);
+//        return sb.reverse().toString();
+//    }
     public void reverseString(StringBuilder sb, int start, int end) {
         while (start < end) {
             char temp = sb.charAt(start);
@@ -25,4 +25,9 @@ public class jz58 {
             end--;
         }
     }
+
+    public String reverseLeftWords(String s, int n) {
+        return s.substring(n, s.length()) + s.substring(0, n);
+    }
+
 }

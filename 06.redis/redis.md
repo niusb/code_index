@@ -48,7 +48,7 @@ SDS不同于C字符串，它是二进制安全的CSDN我就坐这看看
    1. 执行时间缩短
    2. 更好压榨系统的IO性能
 
-![redis.drawio](http://rgwngkfs9.hn-bkt.clouddn.com/redis.drawio.png)
+![redis.drawio](https://raw.githubusercontent.com/niusb/picGo/main/img/redis.drawio.png)
 
 
 
@@ -66,7 +66,7 @@ redis可以保障内部串行（工作线程串行）
 
 核心避免DB接触大量无效/重复的请求
 
-![image-20220825172231201](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220825172231201.png)
+![image-20220825172231201](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220825172231201.png)
 
 
 

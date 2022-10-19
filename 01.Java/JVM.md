@@ -1,4 +1,4 @@
-### JVM八股文
+### JVM
 
 #### 垃圾
 
@@ -10,15 +10,15 @@
 
 - 标记清除（mark-sweep)
 
-![image-20220824094322109](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824094322109.png)
+![image-20220824094322109](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824094322109.png)
 
 - 拷贝(copying)
 
-![image-20220824094237165](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824094237165.png)
+![image-20220824094237165](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824094237165.png)
 
 - 标记压缩（mark-compact）
 
-  ![image-20220824094107714](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824094107714.png)
+  ![image-20220824094107714](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824094107714.png)
 
 #### 垃圾回收器
 
@@ -26,11 +26,11 @@
 
 可以手动调整
 
-![image-20220824135041642](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824135041642.png)
+![image-20220824135041642](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824135041642.png)
 
 ##### 垃圾回收期类型
 
-![image-20220824150955190](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824150955190.png)
+![image-20220824150955190](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824150955190.png)
 
 ##### 三色标记算法
 
@@ -42,11 +42,11 @@
 
 review
 
-![image-20220824162558554](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824162558554.png)
+![image-20220824162558554](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824162558554.png)
 
 ##### 【G1垃圾回收期】SFATB Snapshot At the Beginning
 
-![image-20220825135751233](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220825135751233.png)
+![image-20220825135751233](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220825135751233.png)
 
 #### [JVM怎么给对象分配内存](https://blog.csdn.net/qq_37735779/article/details/124620252)
 
@@ -81,3 +81,51 @@ review
 #### GC频繁如何调优
 
 //todo
+
+
+
+### JVM调优
+
+#### 什么是调优
+
+//todo
+
+#### 常用命令
+
+1. JVM自带命令
+
+   - jps 列出Java进程
+
+   - jinfo（进程号） Java进程的相关信息
+
+   - jstat  内存占用大小输出
+
+     ```
+     jstat -gc (进程号)
+     ```
+
+   - jstack
+
+     
+     
+   - jamp 不能在生产环境使用，会使JVM卡死在某个状态输出文件
+
+     ```
+     jmap -histo (进程号)
+     jmap -histo (进程号) | head -20
+     ```
+
+2. linux系统命令
+
+   - top（进程）
+   - top -Hp （线程）
+
+3. 排查步骤
+
+   1. top排查高进程
+   2. top -Hp排查高线程
+   3. jstack将线程对应到程序，两种情况（频繁GC，或者业务线程BUG）
+      1. 频繁GC，大量流量冲击，或者垃圾回收失败（内存泄漏）
+
+
+

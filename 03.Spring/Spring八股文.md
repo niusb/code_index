@@ -17,11 +17,9 @@
 - 以前xml
 - 近来注解
 
-![image-20220821203746121](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220821203746121.png)
+![image-20220821203746121](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220821203746121.png)
 
-
-
-![image-20220821203716292](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220821203716292.png)
+![image-20220821203716292](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220821203716292.png)
 
 #### 接口和抽象类的区别
 
@@ -31,7 +29,7 @@
 
 #### BeanFactory和FactoryBean的区别
 
-![image-20220824102614688](http://rgwngkfs9.hn-bkt.clouddn.com/image-20220824102614688.png)
+![image-20220824102614688](https://raw.githubusercontent.com/niusb/picGo/main/img/image-20220824102614688.png)
 
 #### 循环依赖（三级缓存）
 

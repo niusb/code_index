@@ -391,7 +391,7 @@ public String hello(@PathVariable("latency") int latency,
 }
 ```
 
-## 访问受保护资源(access_token)
+### 访问受保护资源(access_token)
 
 网关作为 **Resource Server(资源服务器)**, 保护后端服务的API, 三方如果需要访问网关上的API, 需要到 **Authorization Server(授权认证服务器)** 上获取access_token, 通过access_token 才能访问网关上的API.
 

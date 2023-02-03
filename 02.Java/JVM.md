@@ -129,3 +129,8 @@ review
 
 
 
+
+
+### 参考资料
+
+垃圾回收器及其组合:https://blog.csdn.net/Waiting_Mr_Liu/article/details/110456919

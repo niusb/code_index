@@ -4,7 +4,7 @@ public class jz30 {
 //    剑指 Offer 30. 包含 min 函数的栈
     public static void main(String[] args) {
         MinStack minStack = new MinStack();
-//        minStack.push(1);
+        minStack.push(1);
         minStack.push(2);
         System.out.println(minStack.min());
     }

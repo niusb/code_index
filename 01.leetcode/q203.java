@@ -1,3 +1,5 @@
+import javax.management.ListenerNotFoundException;
+
 public class q203 {
     // 203. 移除链表元素
     public static void main(String[] args) {
@@ -14,21 +16,39 @@ public class q203 {
     }
 
     public ListNode removeElements(ListNode head, int val) {
-        if (head == null) {
+//        2023/02/17手写
+        if (head == null){
             return head;
         }
-        // 因为删除可能涉及到头节点，所以设置dummy节点，统一操作
-        ListNode dummy = new ListNode(-1, head);
+        ListNode dummy = new ListNode();
+        dummy.next = head;
         ListNode pre = dummy;
         ListNode cur = head;
-        while (cur != null) {
-            if (cur.val == val) {
+        while (cur != null){
+            if (cur.val == val){
                 pre.next = cur.next;
-            } else {
+            }else {
                 pre = cur;
             }
             cur = cur.next;
         }
         return dummy.next;
+
+//        if (head == null) {
+//            return head;
+//        }
+//        // 因为删除可能涉及到头节点，所以设置dummy节点，统一操作
+//        ListNode dummy = new ListNode(-1, head);
+//        ListNode pre = dummy;
+//        ListNode cur = head;
+//        while (cur != null) {
+//            if (cur.val == val) {
+//                pre.next = cur.next;
+//            } else {
+//                pre = cur;
+//            }
+//            cur = cur.next;
+//        }
+//        return dummy.next;
     }
 }

@@ -1,17 +1,40 @@
-public class jz04 {
-//    剑指 Offer 04. 二维数组中的查找
-    public static void main(String[] args) {
+import java.util.Scanner;
 
+public class jz04 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        input = input.substring(1, input.length() - 1);
+        String[] rows = input.split(", ");
+        int[][] matrix = new int[rows.length][];
+        for (int i = 0; i < rows.length; i++) {
+            String[] row = rows[i].split(",");
+            matrix[i] = new int[row.length];
+            for (int j = 0; j < row.length; j++) {
+                matrix[i][j] = Integer.parseInt(row[j]);
+            }
+        }
+        int target = scanner.nextInt();
+        boolean result = findNumberIn2DArray(matrix, target);
+        System.out.println(result);
     }
-    public boolean findNumberIn2DArray(int[][] matrix, int target) {
-        int i = matrix.length - 1, j = 0;
-        while(i >= 0 && j < matrix[0].length)
-        {
-            if(matrix[i][j] > target) i--;
-            else if(matrix[i][j] < target) j++;
-            else return true;
+
+    public static boolean findNumberIn2DArray(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+        int rows = matrix.length, columns = matrix[0].length;
+        int row = 0, column = columns - 1;
+        while (row < rows && column >= 0) {
+            int num = matrix[row][column];
+            if (num == target) {
+                return true;
+            } else if (num > target) {
+                column--;
+            } else {
+                row++;
+            }
         }
         return false;
     }
-
 }
